@@ -611,3 +611,219 @@ body {
 .social-icons img:hover {
   transform: rotate(10deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ajuste del menú de navegación */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Sección Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajuste de las tarjetas */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+}
+
+/* Ajuste de la sección VR */
+.vr-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.vr-section .text-content,
+.vr-section .image-content {
+  width: 100%;
+  max-width: 500px;
+}
+
+.vr-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sección de precios */
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pricing-cards .card {
+  width: 100%;
+  max-width: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Sección de video */
+.video-container iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sección de redes sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 24px;
+}
+
+/* Media Queries para teléfonos */
+@media screen and (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .hero {
+      flex-direction: column;
+  }
+
+  .hero-content {
+      text-align: center;
+  }
+
+  .container {
+      flex-direction: column;
+  }
+
+  .pricing-cards {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .social-icons {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
+.text-content p {
+  text-align: justify;
+}
+
+
+.metaverse-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  gap: 20px;
+}
+
+.images-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.images-content img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Ajuste para móviles */
+@media screen and (max-width: 768px) {
+  .metaverse-section {
+      flex-direction: column;
+  }
+
+  .images-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .images-content img {
+      max-width: 90%;
+  }
+
+  .text-content {
+      text-align: center;
+      padding: 10px;
+  }
+}
+
