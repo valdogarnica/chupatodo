@@ -230,16 +230,16 @@ nav ul li a:hover {
 
 .vr-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 20px;
   background-color: #1c1535;
   color: white;
   gap: 30px;
 }
 
 .text-content {
-  max-width: 50%;
+  max-width: 250%;
 }
 
 .text-content h1 {
@@ -287,7 +287,7 @@ nav ul li a:hover {
 
 .metaverse-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   padding: 40px;
   background-color: #1c1535;
@@ -297,7 +297,7 @@ nav ul li a:hover {
 
 .images-content {
   display: flex;
-  flex-direction: column;
+  flex-direction:column-reverse;
   gap: 20px;
 }
 
@@ -480,7 +480,7 @@ body {
 
 .card {
     background: #2b1b45;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     width: 250px;
     text-align: center;
@@ -494,7 +494,7 @@ body {
 }
 
 .card p {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-bottom: 10px;
     color: #ccc;
 }
@@ -550,17 +550,6 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -637,152 +626,6 @@ body {
 
 
 
-
-
-
-
-
-/* Estilos generales */
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Ajuste del menú de navegación */
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 10px;
-  gap: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-}
-
-/* Sección Hero */
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
-  padding: 40px;
-}
-
-.hero-content {
-  max-width: 500px;
-}
-
-.hero img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Ajuste de las tarjetas */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  text-align: center;
-}
-
-.card {
-  width: 100%;
-  max-width: 300px;
-  padding: 20px;
-}
-
-/* Ajuste de la sección VR */
-.vr-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
-
-.vr-section .text-content,
-.vr-section .image-content {
-  width: 100%;
-  max-width: 500px;
-}
-
-.vr-section img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Sección de precios */
-.pricing-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.pricing-cards .card {
-  width: 100%;
-  max-width: 250px;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Sección de video */
-.video-container iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Sección de redes sociales */
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  font-size: 24px;
-}
-
-/* Media Queries para teléfonos */
-@media screen and (max-width: 768px) {
-  nav ul {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .hero {
-      flex-direction: column;
-  }
-
-  .hero-content {
-      text-align: center;
-  }
-
-  .container {
-      flex-direction: column;
-  }
-
-  .pricing-cards {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .social-icons {
-      flex-direction: column;
-      align-items: center;
-  }
-}
-
-
-.text-content p {
-  text-align: justify;
-}
-
-
 .metaverse-section {
   display: flex;
   flex-wrap: wrap;
@@ -806,6 +649,11 @@ nav ul li a {
   border-radius: 10px;
 }
 
+/* Justificar los párrafos */
+.text-content p {
+  text-align: justify;
+}
+
 /* Ajuste para móviles */
 @media screen and (max-width: 768px) {
   .metaverse-section {
@@ -825,5 +673,116 @@ nav ul li a {
       text-align: center;
       padding: 10px;
   }
+
+  /* Justificar los párrafos en móviles */
+  .text-content p {
+      text-align: justify;
+  }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos generales del header */
+header {
+  background: #333;
+  padding: 15px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Estilos para el icono de menú hamburguesa */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Ajuste para móviles */
+@media screen and (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: #333;
+      padding: 10px;
+  }
+
+  nav ul.show {
+      display: flex;
+  }
+
+  nav ul li {
+      width: 100%;
+      text-align: center;
+  }
+
+  .menu-icon {
+      display: block;
+  }
+}

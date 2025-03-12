@@ -17,7 +17,8 @@
    
     <header data-aos="fade-down">
         <nav>
-            <ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-menu">
                 <li><a href="/">HOME</a></li>
                 <li><a href="#comprar">PRODUCTOS</a></li>
                 <li><a href="#conocenos">CONOCELO</a></li>
@@ -25,6 +26,13 @@
             </ul>
         </nav>
     </header>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("show");
+        }
+    </script>
+    
 
     <section class="hero" data-aos="fade-up">
         <div class="hero-content">
@@ -51,8 +59,8 @@
             <p>Innovador</p>
         </div>
     </div>
-
-    <section class="container" data-aos="fade-up" id="conocenos">
+        <hr>
+    <section  data-aos="fade-up" id="conocenos">
         <div class="vr-section" data-aos="fade-up">
             <div class="text-content">
                 <h1><span>Internet de las Cosas</span> Cerca de Ti</h1>
@@ -62,14 +70,14 @@
                 <button class="explore-btn">Explorar</button>
             </div>
             <div class="image-content" data-aos="fade-left">
-                <img src="c.png" alt="VR Experience" height="500" width="400">
+                <img src="c.png" alt="VR Experience" height="300" width="400">
             </div>
         </div>
     </section>
-
+    <hr>
     <div class="metaverse-section" data-aos="fade-up">
         <div class="images-content">
-            <img src="cap1.png" class="image1" alt="VR Experience 1" data-aos="zoom-in" width="10" height="10">
+            <img src="cap1.png" class="image1" alt="VR Experience 1" data-aos="zoom-in" width="50" height="50">
             <img src="Designer.jpeg" class="image2" alt="VR Experience 2" data-aos="zoom-in"  width="100%" height="100%">
             <img src="app.jpeg" class="image3" alt="VR Experience 3" data-aos="zoom-in">
         </div>
@@ -82,6 +90,7 @@
             <a class="play-btn" href="#comprar">Comprar</a>
         </div>
     </div>
+    <hr>
     <section class="compra-section" id="comprar" data-aos="fade-up">
         <h2>Compra tu Chupatodo</h2>
         <p>Adquiere la mejor tecnología con la mayor comodidad. ¡Pide el tuyo ahora!</p>
@@ -106,13 +115,14 @@
             </div>
         </div>
     </section>
-
+    <hr>
     <section class="video-section" data-aos="fade-up">
         <h2>Descubre Chupatodo en Acción</h2>
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://youtube.com/shorts/cCnLHWBOecg?si=ZR208PWfoqUhaK51" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
+    <hr>
     <section class="social-section" data-aos="fade-up" id="contacto">
         <h2>Síguenos en nuestras redes sociales</h2>
         <div class="social-icons">
@@ -122,7 +132,7 @@
             <a href="https://www.instagram.com/chupatodooficila/" target="_blank"><i class="fa-brands fa-instragram"></i></a>
         </div>
     </section>
-
+    <hr>
     <script>
         AOS.init();
     </script>
